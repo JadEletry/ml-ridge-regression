@@ -1,4 +1,4 @@
-# 🧠 Ridge Regression Streamlit Demo
+# 🧠 Ridge Regression
 
 This project is an interactive visualization of **Ridge Regression** on polynomial data, built with **Streamlit**. It allows users to adjust the model's polynomial degree and regularization strength (`alpha`) to see how these parameters affect the regression results.
 
