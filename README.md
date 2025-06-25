@@ -15,12 +15,6 @@ This project is an interactive visualization of **Ridge Regression** on polynomi
 
 ---
 
-## 🚀 Live Demo
-
-👉 [Click here to try it out](https://your-streamlit-url.streamlit.app)
-
----
-
 ## 🗂 Files Included
 
 - `app.py` – Streamlit app
