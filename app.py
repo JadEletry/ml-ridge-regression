@@ -26,11 +26,15 @@ model = make_pipeline(PolynomialFeatures(degree), Ridge(alpha=alpha))
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
+# Smooth prediction curve
+x_vals = np.linspace(X_train.min(), X_train.max(), 200).reshape(-1, 1)
+y_vals = model.predict(x_vals)
+
 # Plotting
 fig, ax = plt.subplots()
 ax.scatter(X_train, y_train, color='blue', label='Train Data')
 ax.scatter(X_test, y_test, color='green', label='Test Data')
-ax.plot(X_test, y_pred, color='red', label='Prediction')
+ax.plot(x_vals, y_vals, color='red', label='Prediction')
 ax.legend()
 ax.set_xlabel("x")
 ax.set_ylabel("y")
